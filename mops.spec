@@ -5,8 +5,6 @@ Version:	0.42
 Release:	1
 License:	GPL
 Group:		Applications/Graphics
-Group(de):	Applikationen/Grafik
-Group(pl):	Aplikacje/Grafika
 Source0:	http://www.ebusinessrevolution.com/mops/%{name}-%{version}d-src.tar.gz
 URL:		http://www.ebusinessrevolution.com/mops/
 BuildRequires:	Togl-devel >= 1.5
