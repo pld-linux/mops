@@ -11,7 +11,7 @@ URL:		http://www.ebusinessrevolution.com/mops/
 BuildRequires:	Togl-devel >= 1.5
 BuildRequires:	BMRT >= 2.5
 #Requires:
-Buildroot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 
 %description
