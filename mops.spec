@@ -12,7 +12,6 @@ BuildRequires:	BMRT >= 2.5
 #Requires:
 Buildroot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define		_prefix		/usr/X11R6
 
 %description
 The Mops is a free 3D modeling environment for the RenderMan
