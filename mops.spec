@@ -3,8 +3,9 @@ Summary(pl):	mops
 Name:		mops	
 Version:	0.42
 Release:	1
-Copyright:	GPL
+License:	GPL
 Group:		Applications/Graphics
+Group(de):	Applikationen/Grafik
 Group(pl):	Aplikacje/Grafika
 Source0:	%{name}-%{version}d-src.tar.gz
 BuildRequires:	Togl-devel >= 1.5
@@ -12,7 +13,7 @@ BuildRequires:	BMRT >= 2.5
 #Requires:	
 Buildroot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define	_prefix	/usr/X11R6
+%define		_prefix		/usr/X11R6
 
 %description
 
@@ -20,15 +21,14 @@ Buildroot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %prep
 %setup -q -n %{name}
-
 #%patch
 
 %build
 #./configure --prefix=%{_prefix}
-cd src;mv Makefile.shared Makefile
+cd src; mv -f Makefile.shared Makefile
 %{__make} \
-    CC="gcc" \
-    CFLAGS="$RPM_OPT_FLAGS -DMOPSHAVETEMPNAM"\
+    CC="%{__cc}" \
+    CFLAGS="%{rpmcflags} -DMOPSHAVETEMPNAM"\
     BINDIR=%{_bindir}\
     DOCDIR=%{_docdir}\
     LIBDIR=%{_libdir}\
@@ -40,7 +40,6 @@ cd src;mv Makefile.shared Makefile
     TCLLIB=%{_libdir}\
     RIINCDIR=%{_includedir} \
     RIBUOTLIB=%{_libdir}
-##    RPM_OPT_FLAGS="$RPM_OPT_FLAGS"
 
 %install
 rm -rf $RPM_BUILD_ROOT
