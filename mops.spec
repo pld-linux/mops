@@ -6,6 +6,7 @@ Release:	1
 License:	GPL
 Group:		Applications/Graphics
 Source0:	http://www.ebusinessrevolution.com/mops/%{name}-%{version}d-src.tar.gz
+# Source0-md5:	a87c21670adf9032dc40457090e43079
 URL:		http://www.ebusinessrevolution.com/mops/
 BuildRequires:	Togl-devel >= 1.5
 BuildRequires:	BMRT >= 2.5
