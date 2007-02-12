@@ -1,5 +1,5 @@
 Summary:	mops - free 3D modeling environment for the RenderMan Interface
-Summary(pl):	mops - darmowe ¶rodowisko modelowania 3D do interfejsu RenderMan
+Summary(pl.UTF-8):   mops - darmowe Å›rodowisko modelowania 3D do interfejsu RenderMan
 Name:		mops
 Version:	0.42
 Release:	1
@@ -18,8 +18,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 The Mops is a free 3D modeling environment for the RenderMan
 Interface.
 
-%description -l pl
-Mops jest darmowym ¶rodowiskiem modelowanie 3D do interfejsu
+%description -l pl.UTF-8
+Mops jest darmowym Å›rodowiskiem modelowanie 3D do interfejsu
 RenderMan.
 
 %prep
